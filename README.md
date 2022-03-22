@@ -41,7 +41,7 @@ I took the lead role in the implementation of the 7segment.s, get-digit.s, and g
 
 ## Setup
 Connect the pins on PORTD of the Arduino Uno to the seven-segment display with the following configuration - pin 7 to the top segment, pin 1 to the upper right segment, pin 2 to lower right segment, pin 3 to the bottom segment, pin 4 to the lower left segment, pin 5 to the upper right segment, and pin 6 to the middle segment. Follow the hardware specifications to power the display correctly using the Arduino.
-[Arduino Uno Pinout](./images/arduino-uno-pinout.png)
+![Arduino Uno Pinout](./images/arduino-uno-pinout.png)
 
 Connect the push button to PIN 8, PORTB Bit 0 on the Arduino Uno. This will also double as the ICP1 for the timer system. Follow the hardware specifications to do so safely.
 
