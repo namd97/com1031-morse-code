@@ -83,13 +83,13 @@ This flowchart depicts the process by which dots and dashes are captured and sav
 ## File Description
 The main files for this project are the .s files, the source code written in Assembly.
 
-### 7segment.s
+### [7segment.s](./7segment.S)
 This file defines rudimentary representations for all characters that may be displayed on the seven-segment display - numbers, letters, an empty character, and the error character.
-### check-letter.s
+### [check-letter.s](./check-letter.S)
 This subroutine converts a Morse character (expressed in binary) and a signal count into the position of the character in the digit-table.
-### get-digit.s
+### [get-digit.s](./get-digit.S)
 This subroutine converts a number from 0x0 to 0x25 to its digit representation on the 7-segment-display.
-### group-28.s
+### [group-28.s](./group-28.S)
 This is the entry point to the user code, called from init.s. The setup of ports, timer and interrupts is done here, then an eternal loop is started - with all the work done in the interrupt service routines.
 This file is also where the input capture interrupt and compare match interrupt are defined. These are two interrupts on the same timer, being used to distinguish between short and long presses, and to identify the gap between letters.
 
